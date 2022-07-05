@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C79755922874BB8900F120DF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C79755912874BB8900F120DF /* main.cpp */; };
+		C797559A2874BBA600F120DF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79755992874BBA600F120DF /* GLUT.framework */; };
+		C797559C2874BBAD00F120DF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C797559B2874BBAD00F120DF /* OpenGL.framework */; };
+		C797559F2874BF3800F120DF /* Funcao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C797559D2874BF3800F120DF /* Funcao.cpp */; };
+		C79755A22874C1A000F120DF /* Iluminacao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C79755A02874C1A000F120DF /* Iluminacao.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,12 @@
 /* Begin PBXFileReference section */
 		C797558E2874BB8900F120DF /* curvatura gaussiana */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "curvatura gaussiana"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79755912874BB8900F120DF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C79755992874BBA600F120DF /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C797559B2874BBAD00F120DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C797559D2874BF3800F120DF /* Funcao.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Funcao.cpp; sourceTree = "<group>"; };
+		C797559E2874BF3800F120DF /* Funcao.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Funcao.hpp; sourceTree = "<group>"; };
+		C79755A02874C1A000F120DF /* Iluminacao.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Iluminacao.cpp; sourceTree = "<group>"; };
+		C79755A12874C1A000F120DF /* Iluminacao.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iluminacao.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C797559A2874BBA600F120DF /* GLUT.framework in Frameworks */,
+				C797559C2874BBAD00F120DF /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +55,7 @@
 			children = (
 				C79755902874BB8900F120DF /* curvatura gaussiana */,
 				C797558F2874BB8900F120DF /* Products */,
+				C79755982874BBA600F120DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +71,21 @@
 			isa = PBXGroup;
 			children = (
 				C79755912874BB8900F120DF /* main.cpp */,
+				C79755A02874C1A000F120DF /* Iluminacao.cpp */,
+				C79755A12874C1A000F120DF /* Iluminacao.hpp */,
+				C797559D2874BF3800F120DF /* Funcao.cpp */,
+				C797559E2874BF3800F120DF /* Funcao.hpp */,
 			);
 			path = "curvatura gaussiana";
+			sourceTree = "<group>";
+		};
+		C79755982874BBA600F120DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C797559B2874BBAD00F120DF /* OpenGL.framework */,
+				C79755992874BBA600F120DF /* GLUT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79755922874BB8900F120DF /* main.cpp in Sources */,
+				C797559F2874BF3800F120DF /* Funcao.cpp in Sources */,
+				C79755A22874C1A000F120DF /* Iluminacao.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +199,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -223,6 +252,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
